@@ -1,0 +1,144 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files\\nodejs\\\\node.exe',
+1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'install',
+1 verbose cli   '-g',
+1 verbose cli   'n' ]
+2 info using npm@2.15.1
+3 info using node@v0.12.14
+4 verbose install initial load of C:\Users\Adrian\AppData\Roaming\npm\package.json
+5 verbose readDependencies loading dependencies from C:\Users\Adrian\AppData\Roaming\npm\package.json
+6 silly cache add args [ 'n', null ]
+7 verbose cache add spec n
+8 silly cache add parsed spec { raw: 'n',
+8 silly cache add   scope: null,
+8 silly cache add   name: 'n',
+8 silly cache add   rawSpec: '',
+8 silly cache add   spec: 'latest',
+8 silly cache add   type: 'tag' }
+9 silly addNamed n@latest
+10 verbose addNamed "latest" is being treated as a dist-tag for n
+11 info addNameTag [ 'n', 'latest' ]
+12 silly mapToRegistry name n
+13 silly mapToRegistry using default registry
+14 silly mapToRegistry registry http://nexus.gtl-tech/repository/npm
+15 silly mapToRegistry data { raw: 'n',
+15 silly mapToRegistry   scope: null,
+15 silly mapToRegistry   name: 'n',
+15 silly mapToRegistry   rawSpec: '',
+15 silly mapToRegistry   spec: 'latest',
+15 silly mapToRegistry   type: 'tag' }
+16 silly mapToRegistry uri http://nexus.gtl-tech/repository/npm/n
+17 verbose addNameTag registry:http://nexus.gtl-tech/repository/npm/n not in flight; fetching
+18 verbose request uri http://nexus.gtl-tech/repository/npm/n
+19 verbose request no auth needed
+20 info attempt registry request try #1 at 8:39:50 AM
+21 verbose request id 6327abb7f6aa2642
+22 verbose lastModified Wed, 25 Aug 2021 07:38:38 GMT
+23 http request GET http://nexus.gtl-tech/repository/npm/n
+24 http 304 http://nexus.gtl-tech/repository/npm/n
+25 verbose headers { server: 'nginx/1.14.0 (Ubuntu)',
+25 verbose headers   date: 'Wed, 25 Aug 2021 07:39:49 GMT',
+25 verbose headers   connection: 'keep-alive',
+25 verbose headers   'keep-alive': 'timeout=5',
+25 verbose headers   'x-content-type-options': 'nosniff',
+25 verbose headers   'content-security-policy': 'sandbox allow-forms allow-modals allow-popups allow-presentation allow-scripts allow-top-navigation',
+25 verbose headers   'x-xss-protection': '1; mode=block' }
+26 silly get cb [ 304,
+26 silly get   { server: 'nginx/1.14.0 (Ubuntu)',
+26 silly get     date: 'Wed, 25 Aug 2021 07:39:49 GMT',
+26 silly get     connection: 'keep-alive',
+26 silly get     'keep-alive': 'timeout=5',
+26 silly get     'x-content-type-options': 'nosniff',
+26 silly get     'content-security-policy': 'sandbox allow-forms allow-modals allow-popups allow-presentation allow-scripts allow-top-navigation',
+26 silly get     'x-xss-protection': '1; mode=block' } ]
+27 verbose lastModified http://nexus.gtl-tech/repository/npm/n from cache
+28 verbose get saving n to C:\Users\Adrian\AppData\Roaming\npm-cache\nexus.gtl-tech\repository\npm\n\.cache.json
+29 verbose correctMkdir C:\Users\Adrian\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+30 silly addNameTag next cb for n with tag latest
+31 silly addNamed n@7.3.1
+32 verbose addNamed "7.3.1" is a plain semver version for n
+33 silly cache afterAdd n@7.3.1
+34 verbose afterAdd C:\Users\Adrian\AppData\Roaming\npm-cache\n\7.3.1\package\package.json not in flight; writing
+35 verbose correctMkdir C:\Users\Adrian\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+36 verbose afterAdd C:\Users\Adrian\AppData\Roaming\npm-cache\n\7.3.1\package\package.json written
+37 silly install resolved [ { name: 'n',
+37 silly install resolved     description: 'Interactively Manage All Your Node Versions',
+37 silly install resolved     version: '7.3.1',
+37 silly install resolved     author: { name: 'TJ Holowaychuk', email: 'tj@vision-media.ca' },
+37 silly install resolved     homepage: 'https://github.com/tj/n',
+37 silly install resolved     bugs: { url: 'https://github.com/tj/n/issues' },
+37 silly install resolved     contributors: [ [Object] ],
+37 silly install resolved     keywords:
+37 silly install resolved      [ 'nvm',
+37 silly install resolved        'node',
+37 silly install resolved        'version',
+37 silly install resolved        'manager',
+37 silly install resolved        'switcher',
+37 silly install resolved        'node',
+37 silly install resolved        'binary',
+37 silly install resolved        'env' ],
+37 silly install resolved     bin: { n: 'bin/n' },
+37 silly install resolved     repository: { type: 'git', url: 'git://github.com/tj/n.git' },
+37 silly install resolved     scripts: { test: 'test/bin/run-all-tests' },
+37 silly install resolved     devDependencies:
+37 silly install resolved      { bats: '^1.2.1',
+37 silly install resolved        'bats-assert': 'github:bats-core/bats-assert',
+37 silly install resolved        'bats-support': 'github:bats-core/bats-support' },
+37 silly install resolved     preferGlobal: true,
+37 silly install resolved     os: [ '!win32' ],
+37 silly install resolved     engines: { node: '*' },
+37 silly install resolved     license: 'MIT',
+37 silly install resolved     gitHead: '5b4a526ec71a8b9c4e9af909487565b35e803fe8',
+37 silly install resolved     _id: 'n@7.3.1',
+37 silly install resolved     _nodeVersion: '14.17.2',
+37 silly install resolved     _npmVersion: '6.14.13',
+37 silly install resolved     dist:
+37 silly install resolved      { integrity: 'sha512-vlbroyk1QJ1gAs9laSPAS28HnRMm2fP7BkK7hu7z8SNslwKyZ6qoNV018U1hOiyB0BcDRT9uelA8E0HgJJlYog==',
+37 silly install resolved        shasum: 'f51bcceaaee3b9094fd8eeaf619861dabcfa28a8',
+37 silly install resolved        tarball: 'http://nexus.gtl-tech/repository/npm/n/-/n-7.3.1.tgz',
+37 silly install resolved        fileCount: 5,
+37 silly install resolved        unpackedSize: 73342,
+37 silly install resolved        'npm-signature': '-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.13\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJg/Ix8CRA9TVsSAnZWagAAdqIP+gKcB88OvIxswPrnofkF\nECW8BBJADiOUc3B/MlH1YdClf0dUVb2gRnt1FUlQdjfBBG9LZWMiDraa8SXz\nIyb7KPFdolfGv8LR8gRmSEGwB6ZoBySHG/AlWmMstprfs8+XTFK8zeIGPtq1\nLYx161p5OPcoGo/D/8pow6lyVPIbFLd7qdMukbyj9zB21c2Yjqo/IL+sXI2M\nTnz08k5sdfeEloWAQVs/p8WljFUF6YENvdwdsIWOrHHfAhbRMJWqB04HEz28\nHhwLgbxzPo0aS+DPhpyrn6869nIJKEdJQTZs4M2J+hTC/7Mpe42N0q6q19pB\nMwndvQTcj4dcjFceUU7pxfYKy5RF6jI8NrW+4dvWzWHZxR9x43Sm+qioYxXd\nQISBHukTt1cT5BOksr5Y39nNAZ6xC/uCA6z5vtPepEvr6+5A324efH6jXGar\nVbCUyZ/D9nWlj6g9xTSBQx4ufOKg43ccUxs/ti64uKak8JFka4g1ag3SEfsp\nx55YgWfMZ2kTzYgtAJ1vJz5ohCcO4T04z+Dbx8XTcxt07MPWEnX+oycwHYv8\n4u02paagqkClpA+xy5af4IobGu6tovPBcPAVjbnxqfu5v/UtpfIM9duRR9Qw\naW5fYU734VzqTwsrvQhyZaQetfHoxuS2+w7Uw7vSFWtDtO15XyjwBhGrRJxf\n/61Z\r\n=wacH\r\n-----END PGP SIGNATURE-----\r\n' },
+37 silly install resolved     _npmUser: { name: 'shadowspawn', email: 'npm_j@ruru.gen.nz' },
+37 silly install resolved     directories: {},
+37 silly install resolved     maintainers: [ [Object], [Object], [Object], [Object], [Object], [Object] ],
+37 silly install resolved     _npmOperationalInternal:
+37 silly install resolved      { host: 's3://npm-registry-packages',
+37 silly install resolved        tmp: 'tmp/n_7.3.1_1627163772812_0.32375367179212233' },
+37 silly install resolved     _hasShrinkwrap: false,
+37 silly install resolved     _shasum: 'f51bcceaaee3b9094fd8eeaf619861dabcfa28a8',
+37 silly install resolved     _resolved: 'http://nexus.gtl-tech/repository/npm/n/-/n-7.3.1.tgz',
+37 silly install resolved     _from: 'n@latest',
+37 silly install resolved     readme: 'ERROR: No README data found!' } ]
+38 info install n@7.3.1 into C:\Users\Adrian\AppData\Roaming\npm
+39 info installOne n@7.3.1
+40 verbose installOne of n to C:\Users\Adrian\AppData\Roaming\npm not in flight; installing
+41 verbose correctMkdir C:\Users\Adrian\AppData\Roaming\npm-cache\_locks correctMkdir not in flight; initializing
+42 verbose lock using C:\Users\Adrian\AppData\Roaming\npm-cache\_locks\n-bf37d7b152f843d4.lock for C:\Users\Adrian\AppData\Roaming\npm\node_modules\n
+43 verbose unlock done using C:\Users\Adrian\AppData\Roaming\npm-cache\_locks\n-bf37d7b152f843d4.lock for C:\Users\Adrian\AppData\Roaming\npm\node_modules\n
+44 verbose stack Error: Unsupported
+44 verbose stack     at checkPlatform (C:\Program Files\nodejs\node_modules\npm\node_modules\npm-install-checks\index.js:47:14)
+44 verbose stack     at Array.<anonymous> (C:\Program Files\nodejs\node_modules\npm\node_modules\slide\lib\bind-actor.js:15:8)
+44 verbose stack     at LOOP (C:\Program Files\nodejs\node_modules\npm\node_modules\slide\lib\chain.js:15:14)
+44 verbose stack     at C:\Program Files\nodejs\node_modules\npm\node_modules\slide\lib\chain.js:18:7
+44 verbose stack     at checkEngine (C:\Program Files\nodejs\node_modules\npm\node_modules\npm-install-checks\index.js:26:10)
+44 verbose stack     at Array.<anonymous> (C:\Program Files\nodejs\node_modules\npm\node_modules\slide\lib\bind-actor.js:15:8)
+44 verbose stack     at LOOP (C:\Program Files\nodejs\node_modules\npm\node_modules\slide\lib\chain.js:15:14)
+44 verbose stack     at chain (C:\Program Files\nodejs\node_modules\npm\node_modules\slide\lib\chain.js:20:5)
+44 verbose stack     at C:\Program Files\nodejs\node_modules\npm\lib\install.js:1038:5
+44 verbose stack     at C:\Program Files\nodejs\node_modules\npm\lib\utils\locker.js:39:7
+45 verbose pkgid n@7.3.1
+46 verbose cwd D:\src\lens-ext-invaders
+47 error Windows_NT 10.0.19043
+48 error argv "C:\\Program Files\\nodejs\\\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install" "-g" "n"
+49 error node v0.12.14
+50 error npm  v2.15.1
+51 error code EBADPLATFORM
+52 error notsup Unsupported
+52 error notsup Not compatible with your operating system or architecture: n@7.3.1
+52 error notsup Valid OS:    !win32
+52 error notsup Valid Arch:  any
+52 error notsup Actual OS:   win32
+52 error notsup Actual Arch: x64
+53 verbose exit [ 1, true ]

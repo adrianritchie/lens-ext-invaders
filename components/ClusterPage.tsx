@@ -1,17 +1,17 @@
 import React, { useEffect, useState } from "react"
 import Game from "./Game"
-import { K8sApi } from "@k8slens/extensions";
+import { Renderer } from "@k8slens/extensions";
 
 const ClusterPage = (): JSX.Element => {
 
   console.info("🔥 Cluster page rendered");
 
-  const [podsStore] = useState(K8sApi.apiManager.getStore(K8sApi.podsApi))
+  const [podsStore] = useState(Renderer.K8sApi.apiManager.getStore(Renderer.K8sApi.podsApi))
 
   useEffect(() => {
     const ensure = async () => {
       if (!podsStore.isLoaded) {
-        await podsStore.loadAll();
+        await podsStore.loadAll({ namespaces: ["von-neumann"] });
         podsStore.subscribe();
       }
     }
@@ -19,16 +19,18 @@ const ClusterPage = (): JSX.Element => {
   }, [podsStore])
 
   return (
-    <div className="TabLayout">
-      <main>
-        <div className="ItemListLayout flex column">
-          <div className="header flex gaps align-center">
-            <h5>Space Invaders</h5>
-          </div>
-          <Game pods={podsStore.items} />
+    <Renderer.Component.TabLayout>
+      <header className="flex gaps align-center">
+        <h2 className="flex gaps align-center">
+          <span>Space Invaders</span>
+        </h2>
+        <div className="box right">
+          <Renderer.Component.NamespaceSelectFilter />
         </div>
-      </main>
-    </div>
+      </header>
+      <Game pods={podsStore.items} />
+    </Renderer.Component.TabLayout>
+
   )
 }
 
